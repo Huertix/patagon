@@ -1,0 +1,15 @@
+{% if page_text %}
+
+
+{{page_text.texto_foto_1}}
+
+    {% for key, value in page_text.items %}
+        <h1>{{ key }}</h1>
+        <h3>{{ value }}</h3>
+        <hr>
+    {% endfor %}
+
+
+{% else %}
+    <p>No data is available.</p>
+{% endif %}
