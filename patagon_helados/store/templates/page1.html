@@ -1,15 +1,59 @@
-{% if page_text %}
+{% extends 'base.html' %}
+{#<img src="/media/images/Logo-Patagon.png" alt="My image">#}
+
+{% block container %}
+
+    {% if page_text %}
+
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="/media/images/page1_foto1.jpg" class="card-img-top"  >
+                    <div class="card-body">
+    {#                    <h5 class="card-title">Card title</h5>#}
+                        <p class="card-text"> {{ page_text.texto_foto_1 }} </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="/media/images/page1_foto2.jpg" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">{{ page_text.texto_foto_2 }}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="/media/images/page1_foto2.jpg" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">{{ page_text.texto_foto_3 }}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 
 
-{{page_text.texto_foto_1}}
 
-    {% for key, value in page_text.items %}
-        <h1>{{ key }}</h1>
-        <h3>{{ value }}</h3>
-        <hr>
-    {% endfor %}
+{#    {% if page_text %}#}
+{##}
+{##}
+{#        {{ page_text.texto_foto_1 }}#}
+{##}
+{#        {% for key, value in page_text.items %}#}
+{#            <h1>{{ key }}</h1>#}
+{#            <h3>{{ value }}</h3>#}
+{#            <hr>#}
+{#        {% endfor %}#}
+{##}
+{##}
+{#    {% else %}#}
+{#        <p>No data is available.</p>#}
+{#    {% endif %}#}
 
+{% endblock %}
 
-{% else %}
-    <p>No data is available.</p>
-{% endif %}

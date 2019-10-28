@@ -1,1 +1,5 @@
-/venv
+/.venv
+**/.DS_Store
+/imgs
+/.idea
+/**/*.pyc
