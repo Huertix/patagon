@@ -63,7 +63,7 @@ body::after {
 
 #sticky-footer {
     flex-shrink: none;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 footer small {
@@ -79,4 +79,8 @@ footer span {
 footer .fa {
     color: white;
     font-weight: bold;
+}
+
+footer .flags img {
+    opacity: 100%;
 }

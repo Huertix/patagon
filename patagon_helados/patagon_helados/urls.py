@@ -20,9 +20,10 @@ from django.urls import path
 
 from store import views
 
-
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('admin/', admin.site.urls),
+  path('', views.index, name='index'),
+  path('en/', views.page1, name='page1'),
+
+  path('admin/', admin.site.urls),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

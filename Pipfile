@@ -10,9 +10,7 @@ django = "==2.2.5"
 django-language-field = "==0.0.3"
 pytz = "==2019.2"
 sqlparse = "==0.3.0"
-mysqlclient = "*"
-mysql-connector-python = "*"
-psycopg2 = "*"
+
 
 [requires]
 python_version = "3.7"
