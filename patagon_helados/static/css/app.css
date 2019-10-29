@@ -7,7 +7,9 @@ body {
 body::after {
     content: "";
     background: url("/media/images/patagonia.jpg");
-    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -33,8 +35,20 @@ body::after {
     padding-right: 60px;
 }
 
+.nav-link {
+    color: white !important;
+    font-size: 1.2em;
+}
+
+.nav-item .dropdown-menu {
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
 .card {
     min-height: 500px;
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    color: white;
 }
 
 .navbar.transparent.navbar-inverse .navbar-inner {
@@ -49,7 +63,7 @@ body::after {
 
 #sticky-footer {
     flex-shrink: none;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 footer small {
@@ -60,4 +74,9 @@ footer small {
 
 footer span {
     padding: 0 10px;
+}
+
+footer .fa {
+    color: white;
+    font-weight: bold;
 }
