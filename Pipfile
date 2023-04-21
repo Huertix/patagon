@@ -9,7 +9,7 @@ verify_ssl = true
 django = "==2.2.5"
 django-language-field = "==0.0.3"
 pytz = "==2019.2"
-sqlparse = "==0.3.0"
+sqlparse = "==0.4.4"
 
 
 [requires]
